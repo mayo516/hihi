@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<title>뚝딱이 팬클럽 사이트</title>
+<meta charset="utf-8">
+<style>
+  body{
+    margin: 0px;
+
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  #active {
+    color:black;
+  }
+  .saw {
+    color:gray;
+  }
+  h2{
+    color:#6799FF;
+  }
+  h1{
+    font-size:60px;
+    text-align: center;
+    border-bottom:3px solid gray;
+    padding: 50px;
+    margin: 0px;
+  }
+  #grid ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0px;
+    padding: 40px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #article{
+    padding-left: 50px;
+  }
+</style>
+</head>
+<body>
+  <h1>뚝딱이 팬클럽</h1>
+  <br>
+<input type="button" value="야간모드" onclick="
+  document.querySelector('body').style.backgroundColor = 'black' ;
+  document.querySelector('body').style.color = 'white' ;
+  document.querySelector('a').style.color = 'white' ;
+  ">
+  <div id="grid">
+  <ol>
+    <li><a href="index.html"  class="saw" id="active">홈화면</a></li>
+    <li><a href="photo.html"  class="saw ">인삿말</a></li>
+    <li><a href="video.html" class="saw" >비전</a></li>
+    <li><a href="video.html" class="saw ">관련영상</a></li>
+    <li><a href="im.html" class="saw">임원진</a></li>
+  </ol>
+  <!--
+  <ol>
+    <li><a href="index.html" >홈화면</a></li>
+    <li><a href="photo.html">인삿말</a></li>
+    <li><a href="video.html">비전</a></li>
+    <li><a href="video.html">관련영상</a></li>
+    <li><a href="video.html">임원진</a></li>
+  </ol>
+-->
+  <div id="article">
+    <h2>  HOME</h2>
+      <br>어서오슈<br>
+      <u>뚝딱이 팬 페이지 입니다. 1일 1뚝딱 하세요</u>
+        <input type="button" value="탈퇴하기" onclick="alert('불가능하거든요?')">
+        <br>
+
+      <img  src="ttu.jpg"  >
+  </div>
+</div>
+</body>

@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <head>
 <title>뚝딱이 팬클럽 사이트</title>
+<meta charset="utf-8">
+<style>
+  body{
+    margin: 0px;
+
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  #active {
+    color:black;
+  }
+  .saw {
+    color:gray;
+  }
+  h2{
+    color:#6799FF;
+  }
+  h1{
+    font-size:60px;
+    text-align: center;
+    border-bottom:3px solid gray;
+    padding: 50px;
+    margin: 0px;
+  }
+  #grid ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0px;
+    padding: 40px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #article{
+    padding-left: 50px;
+  }
+</style>
 </head>
 <body>
   <h1>뚝딱이 팬클럽</h1>
+  <div id="grid">
   <ol>
-    <li><a href="index.html" >홈화면</a></li>
-    <li><a href="photo.html">사진</a></li>
-    <li><a href="video.html">영상</a></li>
+    <li><a href="index.html"  class="saw ">홈화면</a></li>
+    <li><a href="photo.html"  class="saw ">인삿말</a></li>
+    <li><a href="video.html" class="saw ">비전</a></li>
+    <li><a href="video.html" class="saw">관련영상</a></li>
+    <li><a href="video.html" class="saw">임원진</a></li>
   </ol>
-  <h2> PHOTO</h2>
-<br>nct임
+    <div id="article">
+  <h2> 인삿말 </h2>
+<br> 뚝딱이를 위한 곳에 오신 여러분 환영합니다. <br>
 <img  src="nct.jpg">
 <meta charset="utf-8">
+</div>
+</div>
 </body>
